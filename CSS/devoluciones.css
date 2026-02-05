@@ -1,0 +1,183 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg {
+    background-image: url('https://logyca.com/sites/default/files/recursos/politica-de-devoluciones-un-aspecto-de-vital-importancia-para-mi-empresa.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: moveBackground 20s infinite alternate;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: center;
+    }
+    50% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.hm-menu {
+    background-color: rgba(0, 0, 0, 0.411);
+
+    padding: 10px 0;
+}
+
+.hm-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hm-menu li {
+    margin: 0 15px;
+}
+
+.hm-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hm-menu a:hover {
+    background-color: #14b4bf;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button, input[type="file"] {
+    padding: 3px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover, input[type="file"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button#aceptar {
+    background-color: #14b4bf; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+button#aceptar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #14b4bf; 
+}
+
+button#aceptar:active {
+    transform: scale(1.05);
+    background-color: #14b4bf; 
+}
+
+button#aceptar:focus {
+    outline: none;
+    box-shadow: 0 0 10px #14b4bf; 
+}
+
+
+
+input[type="file"]::file-selector-button {
+    background-color: #14b4bf; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+input[type="file"]:hover::file-selector-button {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #14b4bf; 
+}
+
+input[type="file"]:active::file-selector-button {
+    transform: scale(1.05);
+    background-color: #14b4bf; 
+}
+
+input[type="file"]:focus::file-selector-button {
+    outline: none;
+    box-shadow: 0 0 10px #14b4bf; 
+}
+
+.scroll-button {
+    display: block;
+    width: 98%;
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.scroll-button:hover {
+    background-color: #555;
+}
+
+.text-explanation {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/devoluciones.css">
+    <title>Devoluciones</title>
+</head>
+<body>
+    <div class="bg">
+        <div class="header">
+            <h1>Formulario de Devoluciones</h1>
+        </div>
+        <nav class="hm-menu">
+        <ul>
+            <li><a href="../PaginaInicial.html">Inicio</a></li>
+            <li><a href="../Html/index.html">Nosotros</a></li>
+            <li><a href="../Html/Categorias.html">Categorias</a></li>
+            <li><a href="../Html/devoluciones.html">Devoluciones</a></li>
+            <li><a href="../Html/Conductor.html">Empleado</a></li>
+        </ul>
+        <div class="text-explanation">
+            <p>Este formulario está diseñado para ayudarle a procesar la devolución de su producto. Por favor, complete todos los campos y adjunte una foto del estado del producto para que podamos atender su solicitud de manera eficiente y logica, gracias esperamos poder solucionarle sus dificultades.</p>
+        </div>
+        <div id="form" class="container">
+            <h2>Complete los siguientes datos para procesar su devolución:</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]+" title="Por favor, ingrese solo números.">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="producto">Nombre del Producto:</label>
+                    <input type="text" id="producto" name="producto" required>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto del estado del producto:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <button id="aceptar">Enviar Devolución</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Js/devolcuiones.js"></script>
+</body>
+</html

@@ -1,0 +1,742 @@
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url("https://www.uniminuto.edu/sites/default/files/2021-09/Tecnica-laboral-auxiliar-almacen-bodega-el-bagre.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.inicio .contenido-seccion{
+    max-width: 50%;
+    text-align: right;
+    padding:  30px;
+}
+.inicio .contenido-seccion header{
+    padding: 1px;
+    a{
+        transition: color 0.3s, opacity 0.3s; 
+    }
+    a:hover {
+        color: #ffffffe0; 
+        opacity: 0.5;
+    }
+}
+header{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-position: center;
+    margin: 22px;
+    width: 94vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+
+
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-76,
+.btn-76 *,
+.btn-76 :after,
+.btn-76 :before,
+.btn-76:after,
+.btn-76:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-76 {
+  -webkit-tap-highlight-color: transparent;
+
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.btn-76:disabled {
+  cursor: default;
+}
+.btn-76:-moz-focusring {
+  outline: auto;
+}
+.btn-76 svg {
+  display: block;
+
+}
+.btn-76 [hidden] {
+  display: none;
+}
+.btn-76 {
+  --neon: #14b4bf;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s linear 0.1s;
+}
+.btn-76:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: #fff;
+  outline-color: transparent;
+  transition: 0.2s linear 0.6s;
+}
+.btn-76 span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.btn-76 .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.btn-76 .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.btn-76 .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.btn-76 .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
+
+.contenido-seccion header nav a:hover {
+
+    box-shadow: 0 0 5px 5px #14b4bf; 
+    border-radius: 10px 50px; 
+    animation: moveLine 1s infinite linear; 
+}
+
+@keyframes moveLine {
+    0% {
+        box-shadow: 0 0 0 5px #14b4bf; 
+    }
+    25% {
+        box-shadow: 0 0 0 10px #14b4bf; 
+    }
+    50% {
+        box-shadow: 0 0 0 15px #14b4bf; 
+    }
+    75% {
+        box-shadow: 0 0 0 10px #14b4bf; 
+    }
+    50% {
+        box-shadow: 0 0 0 5px #14b4bf; 
+    }
+}
+
+
+
+/* ****** */
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #14b4bf;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 70px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 2,5rem;
+    padding: 5px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+.inicio .contenido-seccion .info h2{
+    font-size: 2,5rem;
+    letter-spacing: 2px;
+    text-align: left;
+}
+.inicio .contenido-seccion .foto{
+    position: absolute;
+    top: 9px;
+    left: 3%;
+    width: 16%;
+    background-color: #00000073;
+    border-radius: 5%;
+
+}
+.inicio .contenido-seccion .foto img{
+    width: 80%;
+}
+
+
+
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+/* SECCION SOBRE MI */
+.sobrenosotros{
+    background-color: #e6e6e6;
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+.sobrenosotros .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobrenosotros .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobrenosotros .contenido-seccion .especial{
+    color: #14b4bf;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sobrenosotros .contenido-seccion p{
+    max-width: 700px;
+    font-size: 15px;
+    margin: auto;
+    color: #000000;
+}
+.sobrenosotros .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobrenosotros .contenido-seccion .fila .col{
+    width: 30%;
+    i{
+        transition: color 0.3s, opacity 0.3s; /* Transición suave para el cambio de color y opacidad */
+    }
+    i:hover {
+        color: #14b4bf; 
+        opacity: 0.8;
+    }
+}
+.sobrenosotros .contenido-seccion .fila .col i{
+    color: #086066;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #08565c;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobrenosotros .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 2px;
+    i{
+        transition: color 0.3s, opacity 0.3s; /* Transición suave para el cambio de color y opacidad */
+    }
+    i:hover {
+        color: #14b4bf; 
+        opacity: 0.8;
+    }
+}
+/* SECCION HABILIDADES */
+.Categorias{
+    padding: 80px 0 150px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url("");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #ffffff;
+}
+.Categorias .contenido-seccion{
+    font-size: 15px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+
+.Categorias .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.Categorias .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
+}
+
+.btn-101,
+.btn-101 *,
+.btn-101 :after,
+.btn-101 :before,
+.btn-101:after,
+.btn-101:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-101 {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  background-image: none;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-101:disabled {
+  cursor: default;
+}
+.btn-101:-moz-focusring {
+  outline: auto;
+}
+.btn-101 svg {
+  vertical-align: middle;
+}
+.btn-101 [hidden] {
+  display: none;
+}
+.btn-101 {
+  --thickness: 0.3rem;
+  --roundness: 1.2rem;
+  --color: #eff6ff;
+  --opacity: 0.6;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  background: none;
+  background: hsla(0, 0%, 100%, 0.2);
+  border: none;
+  border-radius: var(--roundness);
+  color: var(--color);
+  cursor: pointer;
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-101:hover {
+  background: hsla(0, 0%, 100%, 0.3);
+  filter: brightness(1.2);
+}
+.btn-101:active {
+  --opacity: 0;
+  background: hsla(0, 0%, 100%, 0.1);
+}
+.btn-101 svg {
+  border-radius: var(--roundness);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-101 rect {
+  fill: none;
+  stroke: var(--color);
+  stroke-width: var(--thickness);
+  stroke-linejoin: round;
+  stroke-dasharray: 185%;
+  stroke-dashoffset: 80;
+  -webkit-animation: snake 2s linear infinite;
+  animation: snake 2s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+.btn-101:hover rect {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: var(--opacity);
+}
+@-webkit-keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+@keyframes snake {
+  to {
+    stroke-dashoffset: 370%;
+  }
+}
+
+.Categorias .contenido-seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Categorias .fila {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* Ajustar según sea necesario */
+}
+
+.Categorias .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.Categorias .col:nth-child(1) {
+  align-items: flex-start;
+}
+
+.Categorias .col:nth-child(2) {
+  align-items: flex-end;
+}
+
+
+
+
+/* SECCION RESUMEN */
+.Informacion{
+    background-color: #e6e6e6;
+    padding: 70px 0 100px 0;
+    text-align: center;
+}
+.Informacion .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.Informacion .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.Informacion .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.Informacion .contenido-seccion .info .col{
+    width: 45%;
+    span{
+        transition: color 0.3s, opacity 0.3s; /* Transición suave para el cambio de color y opacidad */
+    }
+    span:hover {
+        color: #14b4bf; 
+        opacity: 0.8;
+    }
+}
+.Informacion .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #14b4bf;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+.Informacion .contenido-seccion .info .col .descripcion {
+    border-left: 1px solid #bab9b9;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.Informacion .contenido-seccion .info .col table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    
+}
+.Informacion .contenido-seccion .info .col table .datos{
+    width: 40%;
+    font-size: 15px;
+    border-bottom: 1px solid #bab9b9;
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+    
+}
+.Informacion .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+    
+    
+}
+.Informacion .contenido-seccion .info .col table h3{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url("https://alliance-sciences-societe.fr/wp-content/uploads/2022/10/une-plateforme-de-livraison-pour-ameliorer-l-experience-clients-1024x576.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 15px;
+    padding: 10px 0 90px 0;
+    color: #e6e6e6;
+    text-align: left;
+    
+}
+
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
+    
+
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    
+}
+.contacto .contenido-seccion .fila{
+    width:50%;
+    text-align: left;
+
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 30px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    h2{
+        transition: color 0.3s, opacity 0.3s; /* Transición suave para el cambio de color y opacidad */
+    }
+    h2:hover {
+        color: #14b4bf; 
+        opacity: 0.5;
+    }
+
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: #14b4bf;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid #14b4bf;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.contacto .contenido-seccion .fila {
+    width: 80%;
+    text-align: left;
+
+}
+.contacto .contenido-seccion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 20px; /* Espacio entre columnas */
+}
+.contacto .contenido-seccion .formulario {
+    /* El contenido del formulario ocupa la segunda columna */
+    grid-column: 2;
+}
+.contacto .contenido-seccion .fila .col {
+    margin-top: 30px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contacto .contenido-seccion form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    transition: opacity 0.3s; 
+
+}
+.contacto .contenido-seccion form:hover {
+    opacity: 0.9; 
+}
+.contacto .contenido-seccion form .campo {
+    display: flex;
+    flex-direction: column;
+    
+}
+.contacto .contenido-seccion form input,
+.contacto .contenido-seccion form textarea {
+    padding: 10px;
+    border: 1px solid #cccccc9d;
+    border-radius: 7px;
+    font-size: 10px;
+    
+}
+
+.contacto .contenido-seccion form button {
+    padding: 10px 20px;
+    background-color: #14b4bf;
+    color: #fffffff6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contacto .contenido-seccion form button:hover {
+    background-color: #0a7a85;
+}
+
+html body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, 'Times New Roman', Times, serif, sans-serif; 
+  }
+
+
+.descargar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #14b4bf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease-out;
+}
+
+.descargar:hover {
+    background-color: #14b4bf;
+    transform: scale(1.05);
+}
+
+.Piepag {
+
+    margin-top: 20px; /* Ajuste de espacio superior */
+
+    font-weight: bold;
+}
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    nav {
+        display: block;
+    }
+    nav {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .Categorias .contenido-seccion .fila{
+        display: block;
+    }
+    .Categorias .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .Categorias .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobrenosotros .contenido-seccion .fila{
+        display: block;
+    }
+    .sobrenosotros .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .Informacion .contenido-seccion .info{
+        display: block;
+    }
+    .Informacion .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .Informacion .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .Informacion .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
+.copy {
+    background-color: #202020;
+    padding-top: 5px;
+    text-align: right;
+  }
+  .copy p {
+    color: #FFF;
+  }
+  .copy span {
+    color: #ffcc00; }
